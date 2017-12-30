@@ -6,13 +6,46 @@
     android:layout_height="match_parent"
     tools:context="com.example.laptop.otp_using_firebase.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="Enter OTP"
+android:onClick="verify"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:onClick="Send_sms"
+        android:hint="Enter your phone no"
+
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Send OTP" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="28dp"
+        android:text="Submit" />
 
 </RelativeLayout>
