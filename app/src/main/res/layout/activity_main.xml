@@ -15,7 +15,6 @@
         android:layout_marginTop="188dp"
         android:ems="10"
         android:hint="Enter OTP"
-android:onClick="verify"
         android:inputType="phone" />
 
     <EditText
@@ -25,7 +24,6 @@ android:onClick="verify"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:ems="10"
-        android:onClick="Send_sms"
         android:hint="Enter your phone no"
 
         android:inputType="phone" />
@@ -34,10 +32,12 @@ android:onClick="verify"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:text="Send OTP" />
+        android:text="Send OTP"
+        android:onClick="Send_sms"
+
+        />
 
     <Button
         android:id="@+id/button3"
@@ -46,6 +46,9 @@ android:onClick="verify"
         android:layout_alignEnd="@+id/button2"
         android:layout_below="@+id/editText2"
         android:layout_marginTop="28dp"
-        android:text="Submit" />
+        android:text="Submit"
+        android:onClick="verify"
+
+        />
 
 </RelativeLayout>
